@@ -1,0 +1,47 @@
+
+// See https://aka.ms/new-console-template for more information
+
+//Number 1 (Input and Output)
+Console.Write("Input 1: ");
+string input1 = Console.ReadLine();
+Console.Write("Input 2: ");
+string input2 = Console.ReadLine();
+Console.Write("Input 3: ");
+string input3 = Console.ReadLine();
+Console.Write("Input 4: ");
+string input4 = Console.ReadLine();
+Console.Write("Input 5: ");
+string input5 = Console.ReadLine();
+
+Console.WriteLine("\nOutput:");
+Console.WriteLine(input1);
+Console.WriteLine(input2);
+Console.WriteLine(input3);
+Console.WriteLine(input4);
+Console.WriteLine(input5);
+
+//Number 2 (Temperature Converter)
+
+ double celsius;
+ double fahrenheit;
+ double kelvin;
+
+Console.Write("Enter temperature in Celsius: ");
+celsius = Convert.ToDouble(Console.ReadLine());
+
+fahrenheit = (celsius * 9 / 5) + 32;
+kelvin = celsius + 273.15;
+
+Console.WriteLine("Fahrenheit: " + fahrenheit);       
+Console.WriteLine("Kelvin: " + kelvin);
+
+Console.WriteLine("Celsius > 30: " + (celsius > 30));
+Console.WriteLine("Fahrenheit > 86: " + (fahrenheit > 86));
+Console.WriteLine("Kelvin > 300: " + (kelvin > 300));
+
+
+
+Console.WriteLine("\nPress any key to exit...");
+Console.ReadKey();
+
+
