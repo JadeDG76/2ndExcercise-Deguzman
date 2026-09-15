@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WinFormsApp1
+{
+    public partial class Form8 : Form
+    {
+        public Form8()
+        {
+            InitializeComponent();
+        }
+
+        private void btnStars_Click(object sender, EventArgs e)
+        {
+            string stars = "";
+
+            for (int i = 1; i <= 10; i++)
+            {
+                stars += "⭐";
+            }
+
+            MessageBox.Show(stars);
+        }
+
+        
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+        }
+    }
+}

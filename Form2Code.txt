@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WinFormsApp1
+{
+    public partial class Form2 : Form
+    {
+        public Form2()
+        {
+            InitializeComponent();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuess_Click(object sender, EventArgs e)
+        {
+            int secretNumber = 7;
+            int guess = 0;
+
+            while (guess != secretNumber)
+            {
+                guess = Convert.ToInt32(txtGuess.Text);
+
+                if (guess == secretNumber)
+                {
+                    lblMessage.Text = "Correct! You found the secret number!";
+                }
+                else
+                {
+                    lblMessage.Text = "Wrong! Try again.";
+                    break;
+                }
+            }
+            }
+    }
+}

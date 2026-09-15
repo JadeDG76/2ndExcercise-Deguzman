@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace WinFormsApp1
+{
+    public partial class Form6 : Form
+    {
+        public Form6()
+        {
+            InitializeComponent();
+        }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            int door = Convert.ToInt32(txtDoor.Text);
+
+            switch (door)
+            {
+                case 1:
+                    lblResult.Text = "💰 You found treasure!";
+                    break;
+
+                case 2:
+                    lblResult.Text = "👾 A monster appeared!";
+                    break;
+
+                case 3:
+                    lblResult.Text = "🧪 You found a magic potion!";
+                    break;
+
+                default:
+                    lblResult.Text = "Choose Door 1, 2, or 3.";
+                    break;
+            }
+        }
+
+        private void Form6_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblResult_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
